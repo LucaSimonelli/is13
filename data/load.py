@@ -22,7 +22,7 @@ def download_dropbox():
     download from drop box in the meantime
     '''
     print 'Downloading data from https://www.dropbox.com/s/3lxl9jsbw0j7h8a/atis.pkl?dl=0'
-    os.system('wget -O atis.pkl https://www.dropbox.com/s/3lxl9jsbw0j7h8a/atis.pkl?dl=0')
+    os.system('curl -o atis.pkl https://www.dropbox.com/s/3lxl9jsbw0j7h8a/atis.pkl?dl=0')
 
 def load_dropbox(filename):
     if not isfile(filename):

@@ -43,7 +43,7 @@ def get_perf(filename):
     _conlleval = PREFIX + 'conlleval.pl'
     if not isfile(_conlleval):
         #download('http://www-etud.iro.umontreal.ca/~mesnilgr/atis/conlleval.pl') 
-        os.system('wget https://www.comp.nus.edu.sg/%7Ekanmy/courses/practicalNLP_2008/packages/conlleval.pl')
+        os.system('curl -k -o conlleval.pl https://www.comp.nus.edu.sg/%7Ekanmy/courses/practicalNLP_2008/packages/conlleval.pl')
         chmod('conlleval.pl', stat.S_IRWXU) # give the execute permissions
 
     proc = subprocess.Popen(["perl", _conlleval], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
@@ -68,7 +68,7 @@ def get_perfo(filename):
     '''
     tempfile = str(random.randint(1,numpy.iinfo('i').max)) + '.txt'
     if not isfile(PREFIX + 'conlleval.pl'):
-        os.system('wget https://www.comp.nus.edu.sg/%7Ekanmy/courses/practicalNLP_2008/packages/conlleval.pl')
+        os.system('curl -k -o conlleval.pl https://www.comp.nus.edu.sg/%7Ekanmy/courses/practicalNLP_2008/packages/conlleval.pl')
         #download('http://www-etud.iro.umontreal.ca/~mesnilgr/atis/conlleval.pl') 
         chmod('conlleval.pl', stat.S_IRWXU) # give the execute permissions
     if len(PREFIX) > 0:
