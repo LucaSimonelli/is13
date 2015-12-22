@@ -1,0 +1,139 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+OrderedDict	rnn/elman.py	/^from collections import OrderedDict$/;"	i
+OrderedDict	rnn/jordan.py	/^from collections import OrderedDict$/;"	i
+PREFIX	data/load.py	/^PREFIX = os.getenv('ATISDATA', '')$/;"	v
+PREFIX	metrics/accuracy.py	/^PREFIX = os.getenv('ATISDATA', '')$/;"	v
+T	rnn/elman.py	/^from theano import tensor as T$/;"	i
+T	rnn/jordan.py	/^from theano import tensor as T$/;"	i
+__init__	rnn/elman.py	/^    def __init__(self, nh, nc, ne, de, cs):$/;"	m	class:model
+__init__	rnn/jordan.py	/^    def __init__(self, nh, nc, ne, de, cs):$/;"	m	class:model
+atisfold	data/load.py	/^def atisfold(fold):$/;"	f
+atisfull	data/load.py	/^def atisfull():$/;"	f
+best_f1	examples/elman-forward.py	/^            best_f1 = res_valid['f1']$/;"	v
+best_f1	examples/elman-forward.py	/^    best_f1 = -numpy.inf$/;"	v
+best_f1	examples/jordan-forward.py	/^            best_f1 = res_valid['f1']$/;"	v
+best_f1	examples/jordan-forward.py	/^    best_f1 = -numpy.inf$/;"	v
+cPickle	data/load.py	/^import cPickle$/;"	i
+cPickle	metrics/accuracy.py	/^import cPickle$/;"	i
+chmod	metrics/accuracy.py	/^from os import chmod$/;"	i
+conlleval	examples/elman-forward.py	/^from is13.metrics.accuracy import conlleval$/;"	i
+conlleval	examples/jordan-forward.py	/^from is13.metrics.accuracy import conlleval$/;"	i
+conlleval	metrics/accuracy.py	/^def conlleval(p, g, w, filename):$/;"	f
+contextwin	examples/elman-forward.py	/^from is13.utils.tools import shuffle, minibatch, contextwin$/;"	i
+contextwin	examples/jordan-forward.py	/^from is13.utils.tools import shuffle, minibatch, contextwin$/;"	i
+contextwin	utils/tools.py	/^def contextwin(l, win):$/;"	f
+cs	examples/elman-forward.py	/^                    cs = s['win'] )$/;"	v
+cs	examples/jordan-forward.py	/^                    cs = s['win'] )$/;"	v
+cwords	examples/elman-forward.py	/^            cwords = contextwin(train_lex[i], s['win'])$/;"	v
+cwords	examples/jordan-forward.py	/^            cwords = contextwin(train_lex[i], s['win'])$/;"	v
+de	examples/elman-forward.py	/^                    de = s['emb_dimension'],$/;"	v
+de	examples/jordan-forward.py	/^                    de = s['emb_dimension'],$/;"	v
+download	data/load.py	/^def download(origin):$/;"	f
+download	metrics/accuracy.py	/^from is13.data.load import download$/;"	i
+download_dropbox	data/load.py	/^def download_dropbox():$/;"	f
+endOfChunk	conlleval.pl	/^sub endOfChunk {$/;"	s
+folder	examples/elman-forward.py	/^    folder = os.path.basename(__file__).split('.')[0]$/;"	v
+folder	examples/jordan-forward.py	/^    folder = os.path.basename(__file__).split('.')[0]$/;"	v
+get_perf	metrics/accuracy.py	/^def get_perf(filename):$/;"	f
+get_perfo	metrics/accuracy.py	/^def get_perfo(filename):$/;"	f
+groundtruth_test	examples/elman-forward.py	/^        groundtruth_test = [ map(lambda x: idx2label[x], y) for y in test_y ]$/;"	v
+groundtruth_test	examples/jordan-forward.py	/^        groundtruth_test = [ map(lambda x: idx2label[x], y) for y in test_y ]$/;"	v
+groundtruth_valid	examples/elman-forward.py	/^        groundtruth_valid = [ map(lambda x: idx2label[x], y) for y in valid_y ]$/;"	v
+groundtruth_valid	examples/jordan-forward.py	/^        groundtruth_valid = [ map(lambda x: idx2label[x], y) for y in valid_y ]$/;"	v
+gzip	data/load.py	/^import gzip$/;"	i
+idx2la	data/load.py	/^    idx2la = dict((v,k) for k,v in labels2idx.iteritems())$/;"	v
+idx2label	examples/elman-forward.py	/^    idx2label = dict((k,v) for v,k in dic['labels2idx'].iteritems())$/;"	v
+idx2label	examples/jordan-forward.py	/^    idx2label = dict((k,v) for v,k in dic['labels2idx'].iteritems())$/;"	v
+idx2ne	data/load.py	/^    idx2ne = dict((v,k) for k,v in ne2idx.iteritems())$/;"	v
+idx2w	data/load.py	/^    idx2w  = dict((v,k) for k,v in w2idx.iteritems())$/;"	v
+idx2word	examples/elman-forward.py	/^    idx2word  = dict((k,v) for v,k in dic['words2idx'].iteritems())$/;"	v
+idx2word	examples/jordan-forward.py	/^    idx2word  = dict((k,v) for v,k in dic['words2idx'].iteritems())$/;"	v
+isfile	data/load.py	/^from os.path import isfile$/;"	i
+isfile	metrics/accuracy.py	/^from os.path import isfile, join$/;"	i
+join	metrics/accuracy.py	/^from os.path import isfile, join$/;"	i
+labels	examples/elman-forward.py	/^            labels = train_y[i]$/;"	v
+labels	examples/jordan-forward.py	/^            labels = train_y[i]$/;"	v
+load	examples/elman-forward.py	/^from is13.data import load$/;"	i
+load	examples/jordan-forward.py	/^from is13.data import load$/;"	i
+load_dropbox	data/load.py	/^def load_dropbox(filename):$/;"	f
+load_udem	data/load.py	/^def load_udem(filename):$/;"	f
+minibatch	examples/elman-forward.py	/^from is13.utils.tools import shuffle, minibatch, contextwin$/;"	i
+minibatch	examples/jordan-forward.py	/^from is13.utils.tools import shuffle, minibatch, contextwin$/;"	i
+minibatch	utils/tools.py	/^def minibatch(l, bs):$/;"	f
+model	examples/elman-forward.py	/^from is13.rnn.elman import model$/;"	i
+model	examples/jordan-forward.py	/^from is13.rnn.jordan import model$/;"	i
+model	rnn/elman.py	/^class model(object):$/;"	c
+model	rnn/jordan.py	/^class model(object):$/;"	c
+nc	examples/elman-forward.py	/^                    nc = number_of_classes,$/;"	v
+nc	examples/jordan-forward.py	/^                    nc = nclasses,$/;"	v
+nclasses	examples/jordan-forward.py	/^                       train_y+test_y+valid_y)))$/;"	v
+ne	examples/elman-forward.py	/^                    ne = vocabulary_size,$/;"	v
+ne	examples/jordan-forward.py	/^                    ne = vocsize,$/;"	v
+nsentences	examples/jordan-forward.py	/^    nsentences = len(train_lex)$/;"	v
+number_of_classes	examples/elman-forward.py	/^    number_of_classes = len(dic['labels2idx'])$/;"	v
+number_of_sentences	examples/elman-forward.py	/^    number_of_sentences = len(train_lex)$/;"	v
+numpy	examples/elman-forward.py	/^import numpy$/;"	i
+numpy	examples/jordan-forward.py	/^import numpy$/;"	i
+numpy	metrics/accuracy.py	/^import numpy$/;"	i
+numpy	rnn/elman.py	/^import numpy$/;"	i
+numpy	rnn/jordan.py	/^import numpy$/;"	i
+os	data/load.py	/^import os$/;"	i
+os	examples/elman-forward.py	/^import os$/;"	i
+os	examples/jordan-forward.py	/^import os$/;"	i
+os	metrics/accuracy.py	/^import os$/;"	i
+os	rnn/elman.py	/^import os$/;"	i
+os	rnn/jordan.py	/^import os$/;"	i
+pdb	data/load.py	/^    import pdb$/;"	i
+pdb	metrics/accuracy.py	/^import pdb$/;"	i
+predictions_test	examples/elman-forward.py	/^                             for x in test_lex ]$/;"	v
+predictions_test	examples/jordan-forward.py	/^                             for x in test_lex ]$/;"	v
+predictions_valid	examples/elman-forward.py	/^                             for x in valid_lex ]$/;"	v
+predictions_valid	examples/jordan-forward.py	/^                             for x in valid_lex ]$/;"	v
+random	data/load.py	/^import random$/;"	i
+random	examples/elman-forward.py	/^import random$/;"	i
+random	examples/jordan-forward.py	/^import random$/;"	i
+random	metrics/accuracy.py	/^import random$/;"	i
+random	utils/tools.py	/^import random$/;"	i
+recurrence	rnn/elman.py	/^        def recurrence(x_t, h_tm1):$/;"	f	function:model.__init__
+recurrence	rnn/jordan.py	/^        def recurrence(x_t, s_tm1):$/;"	f	function:model.__init__
+res_test	examples/elman-forward.py	/^        res_test  = conlleval(predictions_test, groundtruth_test, words_test, folder + '\/current.test.txt')$/;"	v
+res_test	examples/jordan-forward.py	/^        res_test  = conlleval(predictions_test, groundtruth_test, words_test, folder + '\/current.test.txt')$/;"	v
+res_valid	examples/elman-forward.py	/^        res_valid = conlleval(predictions_valid, groundtruth_valid, words_valid, folder + '\/current.valid.txt')$/;"	v
+res_valid	examples/jordan-forward.py	/^        res_valid = conlleval(predictions_valid, groundtruth_valid, words_valid, folder + '\/current.valid.txt')$/;"	v
+rnn	examples/elman-forward.py	/^    rnn = model(    nh = s['nhidden'],$/;"	v
+rnn	examples/jordan-forward.py	/^    rnn = model(    nh = s['nhidden'],$/;"	v
+s	examples/elman-forward.py	/^    s = {'fold':3, # 5 folds 0,1,2,3,4$/;"	v
+s	examples/jordan-forward.py	/^    s = {'fold':3, # 5 folds 0,1,2,3,4$/;"	v
+save	rnn/elman.py	/^    def save(self, folder):   $/;"	m	class:model
+save	rnn/jordan.py	/^    def save(self, folder):$/;"	m	class:model
+shuffle	examples/elman-forward.py	/^from is13.utils.tools import shuffle, minibatch, contextwin$/;"	i
+shuffle	examples/jordan-forward.py	/^from is13.utils.tools import shuffle, minibatch, contextwin$/;"	i
+shuffle	utils/tools.py	/^def shuffle(lol, seed):$/;"	f
+startOfChunk	conlleval.pl	/^sub startOfChunk {$/;"	s
+stat	metrics/accuracy.py	/^import stat$/;"	i
+subprocess	examples/elman-forward.py	/^import subprocess$/;"	i
+subprocess	examples/jordan-forward.py	/^import subprocess$/;"	i
+subprocess	metrics/accuracy.py	/^import subprocess$/;"	i
+sys	examples/elman-forward.py	/^import sys$/;"	i
+sys	examples/jordan-forward.py	/^import sys$/;"	i
+theano	rnn/elman.py	/^import theano$/;"	i
+theano	rnn/jordan.py	/^import theano$/;"	i
+tic	examples/elman-forward.py	/^        tic = time.time()$/;"	v
+tic	examples/jordan-forward.py	/^        tic = time.time()$/;"	v
+time	examples/elman-forward.py	/^import time$/;"	i
+time	examples/jordan-forward.py	/^import time$/;"	i
+urllib	data/load.py	/^import urllib$/;"	i
+vocabulary_size	examples/elman-forward.py	/^    vocabulary_size = len(dic['words2idx'])$/;"	v
+vocsize	examples/jordan-forward.py	/^                       train_lex+valid_lex+test_lex)))$/;"	v
+wlength	data/load.py	/^    wlength = 35$/;"	v
+words	examples/elman-forward.py	/^                         minibatch(cwords, s['bs']))$/;"	v
+words	examples/jordan-forward.py	/^                         minibatch(cwords, s['bs']))$/;"	v
+words_test	examples/elman-forward.py	/^        words_test = [ map(lambda x: idx2word[x], w) for w in test_lex]$/;"	v
+words_test	examples/jordan-forward.py	/^        words_test = [ map(lambda x: idx2word[x], w) for w in test_lex]$/;"	v
+words_valid	examples/elman-forward.py	/^        words_valid = [ map(lambda x: idx2word[x], w) for w in valid_lex]$/;"	v
+words_valid	examples/jordan-forward.py	/^        words_valid = [ map(lambda x: idx2word[x], w) for w in valid_lex]$/;"	v
