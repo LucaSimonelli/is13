@@ -31,7 +31,12 @@ class model(object):
         # bundle
         self.params = [self.emb, self.Wx, self.Wh, self.W, self.bh, self.b, self.h0]
         self.names = ['embeddings', 'Wx', 'Wh', 'W', 'bh', 'b', 'h0']
-        idxs = T.imatrix() # as many columns as context window size/lines as words in the sentence
+        # Matrix of integers. Each integer is an index to the embedding
+        # that represents the corresponding word. Each row of integers is
+        # a context window of words.
+        # As many columns as context window size.
+        # As many lines as words in the sentence.
+        idxs = T.imatrix()
         x = self.emb[idxs].reshape((idxs.shape[0], de*cs))
         y = T.iscalar('y') # label
 

@@ -48,11 +48,11 @@ if __name__ == '__main__':
     # instanciate the model
     numpy.random.seed(s['seed'])
     random.seed(s['seed'])
-    rnn = model(    nh = s['nhidden'],
-                    nc = number_of_classes,
-                    ne = vocabulary_size,
-                    de = s['emb_dimension'],
-                    cs = s['win'] )
+    rnn = model(nh = s['nhidden'],
+                nc = number_of_classes,
+                ne = vocabulary_size,
+                de = s['emb_dimension'],
+                cs = s['win'] )
 
     # train with early stopping on validation set
     best_f1 = -numpy.inf
